@@ -9,7 +9,7 @@ script:
   - docker run -e CI=true bglogos/basic-react npm run test
 
 deploy:
-  provider: elastickeanstalk
+  provider: elasticbeanstalk
   region: $AWS_REGION
   app: $AWS_APP
   env: $AWS_ENVIRONMENT
